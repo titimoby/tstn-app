@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello HTMX</title>
+    <script src="https://unpkg.com/htmx.org@1.8.6"></script>
+</head>
+
+<body>
+    <h1>Hello {{ name }}!</h1>
+    <button hx-get="/register" hx-swap="outerHTML">Register</button>
+</body>
+
+</html>
