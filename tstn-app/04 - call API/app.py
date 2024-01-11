@@ -11,7 +11,7 @@ def hello():
 
 @app.get("/register")
 def register():
-    response = requests.get("http://192.168.1.65:3000/register")
+    response = requests.get("http://127.0.0.1:3000/register")
     print(response.text)
     return """<h2>Register done</h2>"""
 

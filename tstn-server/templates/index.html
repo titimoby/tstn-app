@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <h1>Dashboard</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Client IP</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- BEGIN: registered_clients -->
+            {% for registered_client in registered_clients %}
+            <tr>
+                <td>{{ registered_client.ip }}</td>
+                <td>{{ registered_client.status.value }}</td>
+            </tr>
+            {% endfor %}
+            <!-- END: registered_clients -->
+        </tbody>
+    </table>
+</body>
+
+</html>
